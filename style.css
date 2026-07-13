@@ -1,0 +1,129 @@
+/* sailr landing — implemented from "Sailr Landing.dc.html" (claude.ai/design).
+   Global tokens + the pseudo-styles (hover/after) the design expressed as
+   dc attributes; layout stays inline in index.html, faithful to the design. */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  background: #041d3e;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #041d3e;
+  color: #ebf5ff;
+  font: 16px/1.6 "Nunito", -apple-system, "Segoe UI", sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #ff7359;
+}
+
+::selection {
+  background: rgba(255, 115, 89, 0.3);
+  color: #ebf5ff;
+}
+
+:focus-visible {
+  outline: 2px solid #ff7359;
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+@keyframes ff-rise {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes ff-bob {
+  0%,
+  100% {
+    transform: translateY(0) rotate(-1.5deg);
+  }
+  50% {
+    transform: translateY(-6px) rotate(1.5deg);
+  }
+}
+
+@keyframes ff-spin {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-delay: 0s !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* --- hover states (style-hover in the design) --- */
+
+.nav-a:hover {
+  color: #ebf5f7;
+}
+
+.nav-accent:hover {
+  color: #ff7359;
+}
+
+.gh-btn:hover {
+  border-color: #ff7359;
+  color: #ff7359;
+}
+
+.btn-coral:hover {
+  background: #ff8a73;
+  color: #041d3e;
+  transform: translateY(-1px);
+}
+
+.btn-ghost:hover {
+  border-color: #ebf5f7;
+  color: #ebf5f7;
+}
+
+.u-link:hover {
+  color: #ff7359;
+}
+
+/* --- the parchment section's paper grain (style-after in the design) --- */
+
+.parchment::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.05;
+  background-image: url('data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22160%22 height=%22160%22%3E%3Cfilter id=%22n%22%3E%3CfeTurbulence type=%22fractalNoise%22 baseFrequency=%220.85%22 numOctaves=%222%22 stitchTiles=%22stitch%22/%3E%3C/filter%3E%3Crect width=%22100%25%22 height=%22100%25%22 filter=%22url(%23n)%22/%3E%3C/svg%3E');
+}
