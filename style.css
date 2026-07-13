@@ -127,3 +127,27 @@ img {
   opacity: 0.05;
   background-image: url('data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22160%22 height=%22160%22%3E%3Cfilter id=%22n%22%3E%3CfeTurbulence type=%22fractalNoise%22 baseFrequency=%220.85%22 numOctaves=%222%22 stitchTiles=%22stitch%22/%3E%3C/filter%3E%3Crect width=%22100%25%22 height=%22100%25%22 filter=%22url(%23n)%22/%3E%3C/svg%3E');
 }
+
+/* --- the OS picker chips --- */
+
+.os-chip {
+  font: 700 12.5px/1 "JetBrains Mono", monospace;
+  color: #8ca8c2;
+  background: rgba(235, 245, 247, 0.04);
+  border: 1.5px solid rgba(140, 168, 194, 0.35);
+  border-radius: 999px;
+  padding: 9px 15px;
+  cursor: pointer;
+  transition: border-color 0.15s, color 0.15s, background 0.15s;
+}
+
+.os-chip:hover {
+  border-color: #ebf5f7;
+  color: #ebf5f7;
+}
+
+.os-chip.active {
+  border-color: #ff7359;
+  color: #ff7359;
+  background: rgba(255, 115, 89, 0.1);
+}

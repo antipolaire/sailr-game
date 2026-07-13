@@ -47,31 +47,37 @@
       </a>
       <a href="#download" class="btn-ghost" style="display:inline-flex;align-items:center;gap:8px;border-radius:11px;padding:14px 24px;border:1.5px solid rgba(235,245,247,.35);color:#EBF5F7;font-weight:700;font-size:16px;transition:border-color .15s">all builds</a>
     </div>
-    <p style="margin-top:20px;font-family:'JetBrains Mono',monospace;font-size:12px;color:#8CA8C2;opacity:0;animation:ff-rise .8s cubic-bezier(.22,1,.36,1) .52s both">free · windows / macos / linux · nothing to lose but daylight</p>
+    <div class="os-row" role="group" aria-label="choose your platform" style="margin-top:16px;display:flex;flex-wrap:wrap;gap:8px;opacity:0;animation:ff-rise .8s cubic-bezier(.22,1,.36,1) .5s both">
+      <button type="button" class="os-chip" data-os="windows">windows</button>
+      <button type="button" class="os-chip" data-os="macos-arm">macos · apple silicon</button>
+      <button type="button" class="os-chip" data-os="macos-intel">macos · intel</button>
+      <button type="button" class="os-chip" data-os="linux">linux</button>
+    </div>
+    <p style="margin-top:18px;font-family:'JetBrains Mono',monospace;font-size:12px;color:#8CA8C2;opacity:0;animation:ff-rise .8s cubic-bezier(.22,1,.36,1) .58s both">free · nothing to lose but daylight</p>
   </div>
 </section>
 
 <!-- ================= the wind is real ================= -->
 <section style="max-width:1120px;margin:0 auto;padding:88px 24px 0">
-  <p style="font-family:'JetBrains Mono',monospace;font-size:13px;color:#FF7359">— the wind is real —</p>
-  <h2 style="margin-top:10px;font-size:clamp(28px,3.6vw,40px);line-height:1.15;font-weight:800;color:#EBF5F7;max-width:34rem">you steer. the crew trims. the boat is <em style="font-style:italic;color:#FF7359">solved</em>, not faked.</h2>
-  <p style="margin-top:16px;max-width:44rem;color:#8CA8C2;line-height:1.7">the boat you steer isn't animated to feel right — its performance is solved at launch by a velocity-prediction program from this repository's own wind-tunnel research code. when you pinch too close, luff, stall, broach, or surf a swell, that's the physics talking.</p>
+  <p style="font-family:'JetBrains Mono',monospace;font-size:13px;color:#FF7359">— it feels like sailing because it is —</p>
+  <h2 style="margin-top:10px;font-size:clamp(28px,3.6vw,40px);line-height:1.15;font-weight:800;color:#EBF5F7;max-width:34rem">the fun is real. so is the wind.</h2>
+  <p style="margin-top:16px;max-width:44rem;color:#8CA8C2;line-height:1.7">sailr is the simple joy of small-boat sailing: reading gusts on the water, timing a tack just right, ghosting past a lee shore with a hand's width to spare. underneath sits a seriously strong physics engine — so when the boat rewards you, you earned it.</p>
 
   <div style="margin-top:40px;display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px">
     <div style="border:1.5px solid rgba(140,168,194,.22);border-radius:13px;background:rgba(235,245,247,.03);padding:24px">
-      <p style="font-family:'JetBrains Mono',monospace;font-size:12px;color:#FF7359">polars, from the tunnel</p>
-      <h3 style="margin-top:8px;font-size:17px;font-weight:800;color:#EBF5F7">solved, not faked</h3>
-      <p style="margin-top:8px;color:#8CA8C2;line-height:1.65;font-size:14.5px">hull and rig polars come straight from the repo's cfd and aerodynamics research code. no hand-tuned stats anywhere in the fleet.</p>
+      <p style="font-family:'JetBrains Mono',monospace;font-size:12px;color:#FF7359">read the water</p>
+      <h3 style="margin-top:8px;font-size:17px;font-weight:800;color:#EBF5F7">the wind has a shape</h3>
+      <p style="margin-top:8px;color:#8CA8C2;line-height:1.65;font-size:14.5px">gusts darken the surface before they arrive, and every island casts a real, computed wind shadow. locals win races.</p>
     </div>
     <div style="border:1.5px solid rgba(140,168,194,.22);border-radius:13px;background:rgba(235,245,247,.03);padding:24px">
-      <p style="font-family:'JetBrains Mono',monospace;font-size:12px;color:#FF7359">fft ocean, painted sky</p>
-      <h3 style="margin-top:8px;font-size:17px;font-weight:800;color:#EBF5F7">everything is synthesized</h3>
-      <p style="margin-top:8px;color:#8CA8C2;line-height:1.65;font-size:14.5px">the ocean your hull actually floats on, the sky, every sound in the game, the hulls themselves — generated, not bought.</p>
+      <p style="font-family:'JetBrains Mono',monospace;font-size:12px;color:#FF7359">you steer, the crew trims</p>
+      <h3 style="margin-top:8px;font-size:17px;font-weight:800;color:#EBF5F7">one tiller to learn</h3>
+      <p style="margin-top:8px;color:#8CA8C2;line-height:1.65;font-size:14.5px">no sail micromanagement unless you want it — the crew trims to the boat's real polar. easy to start, a lifetime to master.</p>
     </div>
     <div style="border:1.5px solid rgba(140,168,194,.22);border-radius:13px;background:rgba(235,245,247,.03);padding:24px">
-      <p style="font-family:'JetBrains Mono',monospace;font-size:12px;color:#FF7359">the 2d solver returns</p>
-      <h3 style="margin-top:8px;font-size:17px;font-weight:800;color:#EBF5F7">the lee is computed</h3>
-      <p style="margin-top:8px;color:#8CA8C2;line-height:1.65;font-size:14.5px">every island's wind shadow comes from the fluid solver that started this repo. racing means reading it.</p>
+      <p style="font-family:'JetBrains Mono',monospace;font-size:12px;color:#FF7359">honest consequences</p>
+      <h3 style="margin-top:8px;font-size:17px;font-weight:800;color:#EBF5F7">the sea keeps score</h3>
+      <p style="margin-top:8px;color:#8CA8C2;line-height:1.65;font-size:14.5px">carry the kite a gust too long and you'll round up. reef late and you'll wish you hadn't. nothing punishes — the logbook just remembers.</p>
     </div>
   </div>
 
@@ -82,6 +88,39 @@
       <span style="font-family:'JetBrains Mono',monospace;font-size:12px;color:#8CA8C2">TWS 28.2 kn · F7 near gale · HEEL 46°S</span>
     </figcaption>
   </figure>
+</section>
+
+<!-- ================= engine room ================= -->
+<section style="max-width:1120px;margin:0 auto;padding:88px 24px 0">
+  <p style="font-family:'JetBrains Mono',monospace;font-size:13px;color:#FF7359">— the engine room —</p>
+  <h2 style="margin-top:10px;font-size:clamp(28px,3.6vw,40px);font-weight:800;color:#EBF5F7">for the technically curious.</h2>
+  <p style="margin-top:16px;max-width:44rem;color:#8CA8C2;line-height:1.7">the game is a thin, cosy layer over a research-grade toolchain. if these words mean something to you, welcome aboard:</p>
+  <div style="margin-top:32px;display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:2px;border:1.5px solid rgba(140,168,194,.22);border-radius:13px;overflow:hidden;background:rgba(140,168,194,.22)">
+    <div style="background:#062348;padding:22px 24px">
+      <p style="font-family:'JetBrains Mono',monospace;font-size:13px;font-weight:700;color:#FF7359">VPP · velocity-prediction program</p>
+      <p style="margin-top:6px;font-family:'JetBrains Mono',monospace;font-size:12.5px;line-height:1.7;color:#8CA8C2">hull + rig force equilibria solved at launch into full polar tables. every figure on a boat card is computed; none are authored.</p>
+    </div>
+    <div style="background:#062348;padding:22px 24px">
+      <p style="font-family:'JetBrains Mono',monospace;font-size:13px;font-weight:700;color:#FF7359">VLM + CFD calibration</p>
+      <p style="margin-top:6px;font-family:'JetBrains Mono',monospace;font-size:12.5px;line-height:1.7;color:#8CA8C2">vortex-lattice sail aerodynamics, drag floors measured in a CFD wind tunnel rather than guessed.</p>
+    </div>
+    <div style="background:#062348;padding:22px 24px">
+      <p style="font-family:'JetBrains Mono',monospace;font-size:13px;font-weight:700;color:#FF7359">MAC-grid wind fields</p>
+      <p style="margin-top:6px;font-family:'JetBrains Mono',monospace;font-size:12.5px;line-height:1.7;color:#8CA8C2">every island lee is a 2D staggered-grid fluid solve, baked per 22.5° wind sector and sampled live while you race.</p>
+    </div>
+    <div style="background:#062348;padding:22px 24px">
+      <p style="font-family:'JetBrains Mono',monospace;font-size:13px;font-weight:700;color:#FF7359">FFT ocean, one surface</p>
+      <p style="margin-top:6px;font-family:'JetBrains Mono',monospace;font-size:12.5px;line-height:1.7;color:#8CA8C2">JONSWAP spectrum → inverse FFT with loop-quantized frequencies. the buoyancy solver samples the exact texels the GPU renders: hulls sit on the real sea, always.</p>
+    </div>
+    <div style="background:#062348;padding:22px 24px">
+      <p style="font-family:'JetBrains Mono',monospace;font-size:13px;font-weight:700;color:#FF7359">XPBD sail cloth</p>
+      <p style="margin-top:6px;font-family:'JetBrains Mono',monospace;font-size:12.5px;line-height:1.7;color:#8CA8C2">position-based cloth with honest re-cut reefing. billow, luffing flog and the camber flip through a gybe are emergent, not animated.</p>
+    </div>
+    <div style="background:#062348;padding:22px 24px">
+      <p style="font-family:'JetBrains Mono',monospace;font-size:13px;font-weight:700;color:#FF7359">synthesized everything</p>
+      <p style="margin-top:6px;font-family:'JetBrains Mono',monospace;font-size:12.5px;line-height:1.7;color:#8CA8C2">all audio is generated at startup — wind, water, five short blasts, the gybe clunk. zero sound files shipped.</p>
+    </div>
+  </div>
 </section>
 
 <!-- ================= five seas ================= -->
@@ -168,6 +207,7 @@
       <h2 style="margin-top:10px;font-size:clamp(26px,3.2vw,36px);font-weight:800;color:#EBF5F7">keep the wind in it. 🧡</h2>
       <p style="margin-top:14px;max-width:34rem;color:#8CA8C2;line-height:1.7">sailr is one developer's nights and weekends — and player wishes are the roadmap. if the logbook has given you a story worth retelling, the patreon keeps her sailing.</p>
       <p style="margin-top:12px;font-family:'JetBrains Mono',monospace;font-size:12px;color:#8CA8C2">backer wishes go up the mast first.</p>
+      <p style="margin-top:18px;max-width:34rem;color:#8CA8C2;line-height:1.7;font-size:14.5px">and if you just want to help make it a better game: wishes, wreck reports and weird physics stories are all welcome — <a href="https://github.com/antipolaire/fluidr-game/issues" class="u-link" style="color:#EBF5F7;text-decoration:underline;text-underline-offset:3px">open an issue</a> or drop into the <a href="https://github.com/antipolaire/fluidr-game/discussions" class="u-link" style="color:#EBF5F7;text-decoration:underline;text-underline-offset:3px">harbor talk</a>. every one gets read.</p>
     </div>
     <div style="display:flex;flex-direction:column;align-items:flex-start;gap:14px;justify-self:start">
       <a href="https://www.patreon.com/sailr" class="btn-coral" style="display:inline-flex;align-items:center;gap:10px;border-radius:11px;padding:14px 26px;background:#FF7359;color:#041D3E;font-weight:800;font-size:16.5px;box-shadow:0 2px 4px rgba(0,0,0,.25),0 12px 30px rgba(255,115,89,.28);transition:background .15s,transform .15s">
@@ -192,12 +232,14 @@
         download <span class="js-dl-suffix">sailr</span>
       </a>
     </div>
-    <div style="margin-top:22px;display:flex;flex-wrap:wrap;justify-content:center;gap:10px 22px;font-family:'JetBrains Mono',monospace;font-size:13px">
-      <a href="https://github.com/antipolaire/fluidr-game/releases/download/sailr-v0.1.0/sailr-windows-x86_64.zip" class="u-link" style="color:#8CA8C2;text-decoration:underline;text-underline-offset:3px">windows</a>
-      <a href="https://github.com/antipolaire/fluidr-game/releases/download/sailr-v0.1.0/sailr-macos-arm64.zip" class="u-link" style="color:#8CA8C2;text-decoration:underline;text-underline-offset:3px">macos · apple silicon</a>
-      <a href="https://github.com/antipolaire/fluidr-game/releases/download/sailr-v0.1.0/sailr-macos-x86_64.zip" class="u-link" style="color:#8CA8C2;text-decoration:underline;text-underline-offset:3px">macos · intel</a>
-      <a href="https://github.com/antipolaire/fluidr-game/releases/download/sailr-v0.1.0/sailr-linux-x86_64.zip" class="u-link" style="color:#8CA8C2;text-decoration:underline;text-underline-offset:3px">linux</a>
-      <a href="https://github.com/antipolaire/fluidr-game/releases/tag/sailr-v0.1.0" class="u-link" style="color:#8CA8C2;text-decoration:underline;text-underline-offset:3px">release notes</a>
+    <div class="os-row" role="group" aria-label="choose your platform" style="margin-top:22px;display:flex;flex-wrap:wrap;justify-content:center;gap:8px">
+      <button type="button" class="os-chip" data-os="windows">windows</button>
+      <button type="button" class="os-chip" data-os="macos-arm">macos · apple silicon</button>
+      <button type="button" class="os-chip" data-os="macos-intel">macos · intel</button>
+      <button type="button" class="os-chip" data-os="linux">linux</button>
+    </div>
+    <div style="margin-top:16px;display:flex;justify-content:center;font-family:'JetBrains Mono',monospace;font-size:13px">
+      <a href="https://github.com/antipolaire/fluidr-game/releases/tag/sailr-v0.1.0" class="u-link" style="color:#8CA8C2;text-decoration:underline;text-underline-offset:3px">all files &amp; release notes</a>
     </div>
     <p style="margin-top:20px;font-size:13.5px;color:#8CA8C2;line-height:1.7">unzip and keep <span style="font-family:'JetBrains Mono',monospace;font-size:12.5px">assets/</span> next to the binary.<br>macos builds are unsigned — right-click → open, and you're in.</p>
   </div>
@@ -210,6 +252,7 @@
       <p style="font-weight:800;font-size:16px;color:#EBF5F7">⛵ sailr</p>
       <p style="margin-top:8px;font-family:'JetBrains Mono',monospace;font-size:12px;line-height:1.8;color:#8CA8C2">hull &amp; rig physics by the fluidr wind tunnel —<br>polars baked live from its vpp.</p>
       <p style="margin-top:10px;font-size:13px;color:#8CA8C2">wishes &amp; wreck reports → the <a href="https://github.com/antipolaire/fluidr-game" style="color:#FF7359">repo</a>.</p>
+      <p style="margin-top:6px;font-size:13px;color:#8CA8C2">wishes &amp; wreck reports → <a href="https://github.com/antipolaire/fluidr-game/issues" style="color:#FF7359">issues</a> · harbor talk → <a href="https://github.com/antipolaire/fluidr-game/discussions" style="color:#FF7359">discussions</a></p>
       <p style="margin-top:6px;font-size:13px;color:#8CA8C2">kept afloat by <a href="https://www.patreon.com/sailr" style="color:#FF7359">patrons</a> 🧡</p>
     </div>
     <div style="font-size:12.5px;color:#5F7A96;line-height:2;max-width:26rem">
@@ -227,28 +270,37 @@
 </footer>
 
 <script>
-// OS-aware download button (from the design's DCLogic). Without JS — or on
-// an OS we can't guess — the buttons already point at the release page.
+// The OS picker: chips retarget every download button; the visitor's UA
+// preselects a best guess. Without JS the buttons point at the release page.
 (function () {
   var BASE = "https://github.com/antipolaire/fluidr-game/releases";
   var builds = {
     windows: { suffix: "for windows", href: BASE + "/download/sailr-v0.1.0/sailr-windows-x86_64.zip" },
     "macos-arm": { suffix: "for macos (apple silicon)", href: BASE + "/download/sailr-v0.1.0/sailr-macos-arm64.zip" },
+    "macos-intel": { suffix: "for macos (intel)", href: BASE + "/download/sailr-v0.1.0/sailr-macos-x86_64.zip" },
     linux: { suffix: "for linux", href: BASE + "/download/sailr-v0.1.0/sailr-linux-x86_64.zip" }
   };
+  var chips = Array.prototype.slice.call(document.querySelectorAll(".os-chip"));
+  function setOS(os) {
+    var pick = builds[os];
+    if (!pick) return;
+    document.querySelectorAll(".js-dl").forEach(function (a) { a.href = pick.href; });
+    document.querySelectorAll(".js-dl-suffix").forEach(function (s) { s.textContent = pick.suffix; });
+    chips.forEach(function (c) {
+      var on = c.getAttribute("data-os") === os;
+      c.classList.toggle("active", on);
+      c.setAttribute("aria-pressed", on ? "true" : "false");
+    });
+  }
+  chips.forEach(function (c) {
+    c.addEventListener("click", function () { setOS(c.getAttribute("data-os")); });
+  });
   var ua = navigator.userAgent || "";
-  var os = /Windows/i.test(ua) ? "windows"
+  var guess = /Windows/i.test(ua) ? "windows"
     : /Macintosh|Mac OS X/i.test(ua) ? "macos-arm"
     : /Linux/i.test(ua) && !/Android/i.test(ua) ? "linux"
     : null;
-  var pick = os && builds[os];
-  if (!pick) return;
-  document.querySelectorAll(".js-dl").forEach(function (a) {
-    a.href = pick.href;
-  });
-  document.querySelectorAll(".js-dl-suffix").forEach(function (s) {
-    s.textContent = pick.suffix;
-  });
+  if (guess) setOS(guess);
 })();
 </script>
 </body>
